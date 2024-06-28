@@ -2,4 +2,4 @@
 
 ### About
 
-Just to make easy to do things for the terminal
+Just to make easy doing things for the terminal
