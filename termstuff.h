@@ -104,39 +104,39 @@ typedef enum Font Font;
 // ---------- FUNCTIONS ----------
 
 // color and text effects
-extern void term_apply_color(Colors color, ColorOpt coloropt);
-extern void term_apply_8bit_color(uint8_t color, ColorOpt coloropt);
-extern void term_apply_rgb_color(uint8_t r, uint8_t g, uint8_t b, ColorOpt coloropt);
-extern void term_apply_font_effects(FontEffects fonteffects);
-extern void term_apply_ideogram_effects(IdeogramEffects effects);
-extern void term_change_font(Font font);
+void term_apply_color(Colors color, ColorOpt coloropt);
+void term_apply_8bit_color(uint8_t color, ColorOpt coloropt);
+void term_apply_rgb_color(uint8_t r, uint8_t g, uint8_t b, ColorOpt coloropt);
+void term_apply_font_effects(FontEffects fonteffects);
+void term_apply_ideogram_effects(IdeogramEffects effects);
+void term_change_font(Font font);
 
 // cursor movement
-extern void term_cursor_up(uint16_t n);
-extern void term_cursor_down(uint16_t n);
-extern void term_cursor_forward(uint16_t n);
-extern void term_cursor_back(uint16_t n);
-extern void term_cursor_next_line(uint16_t n);
-extern void term_cursor_previous_line(uint16_t n);
-extern void term_cursor_horizontal_absolute(uint16_t n);
-extern void term_cursor_position(uint16_t n, uint16_t m);
-extern void term_cursor_erase_display(uint16_t n);
-extern void term_cursor_erase_line(uint16_t n);
-extern void term_cursor_scroll_up(uint16_t n);
-extern void term_cursor_scroll_down(uint16_t n);
-extern void term_cursor_horizontal_vertical_position(uint16_t n, uint16_t m);
-extern void term_cursor_aux_post_on();
-extern void term_cursor_aux_port_off();
-extern void term_cursor_device_status_repost();
-extern void term_cursor_save_current_possition();
-extern void term_cursor_restore_saved_position();
-extern void term_cursor_show();
-extern void term_cursor_hide();
-extern void term_cursor_enable_reporting_focus();
-extern void term_cursor_disable_reporting_focus();
-extern void term_cursor_enable_alternative_screen_buffer();
-extern void term_cursor_disable_alternative_screen_buffer();
-extern void term_cursor_bracketed_paste_mode_on();
-extern void term_cursor_bracketed_paste_mode_off();
+void term_cursor_up(uint16_t n);
+void term_cursor_down(uint16_t n);
+void term_cursor_forward(uint16_t n);
+void term_cursor_back(uint16_t n);
+void term_cursor_next_line(uint16_t n);
+void term_cursor_previous_line(uint16_t n);
+void term_cursor_horizontal_absolute(uint16_t n);
+void term_cursor_position(uint16_t n, uint16_t m);
+void term_cursor_erase_display(uint16_t n);
+void term_cursor_erase_line(uint16_t n);
+void term_cursor_scroll_up(uint16_t n);
+void term_cursor_scroll_down(uint16_t n);
+void term_cursor_horizontal_vertical_position(uint16_t n, uint16_t m);
+void term_cursor_aux_post_on();
+void term_cursor_aux_port_off();
+void term_cursor_device_status_repost();
+void term_cursor_save_current_possition();
+void term_cursor_restore_saved_position();
+void term_cursor_show();
+void term_cursor_hide();
+void term_cursor_enable_reporting_focus();
+void term_cursor_disable_reporting_focus();
+void term_cursor_enable_alternative_screen_buffer();
+void term_cursor_disable_alternative_screen_buffer();
+void term_cursor_bracketed_paste_mode_on();
+void term_cursor_bracketed_paste_mode_off();
 
 #endif // !_TERM_STUFF_
