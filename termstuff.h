@@ -11,7 +11,6 @@
  *
  */
 
-#include <cstdint>
 #include <stdint.h>
 
 // ---------- ENUMS ----------
