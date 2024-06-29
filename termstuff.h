@@ -2,7 +2,7 @@
 #define _TERM_STUFF_
 
 /*
- * ANSI escape codes
+ * ANSI escape codes (and some iso)
  * C library to make it easy
  *
  * Author: Hugo Coto Florez
@@ -92,6 +92,129 @@ enum IdeogramEffects
 
 };
 
+enum VtSequence
+{
+    vtHOME   = 1,
+    vtINSERT = 2,
+    vtDELETE = 3,
+    vtEND    = 4,
+    vtPGUP   = 5,
+    vtPGDN   = 6,
+    vtHOME2  = 7,
+    vtEND2   = 8,
+    vtF0     = 10,
+    vtF1     = 11,
+    vtF2     = 12,
+    vtF3     = 13,
+    vtF4     = 14,
+    vtF5     = 15,
+    vtF6     = 17,
+    vtF7     = 18,
+    vtF8     = 19,
+    vtF9     = 20,
+    vtF10    = 21,
+    vtF11    = 23,
+    vtF12    = 25,
+    vtF13    = 26,
+    vtF14    = 27,
+    vtF15    = 28,
+    vtF16    = 29,
+    vtF17    = 31,
+    vtF18    = 32,
+    vtF19    = 33,
+    vtF20    = 34,
+};
+
+enum XtermSequence
+{
+    XtermUP      = 'A',
+    XtermDown    = 'B',
+    XtermRIGHT   = 'C',
+    XtermLEFT    = 'D',
+    XtermEND     = 'F',
+    XtermKEYPAD5 = 'G',
+    XtermHOME    = 'H',
+    XtermF1      = 'P',
+    XtermF2      = 'Q',
+    XtermF3      = 'R',
+    XtermF4      = 'S',
+};
+
+enum AsciiControlCode
+{
+    NUL = 0x0,
+    SOH,
+    STX,
+    ETX,
+    EOT,
+    ENQ,
+    ACK,
+    BEL,
+    BS,
+    HT,
+    LF,
+    VT,
+    FF,
+    CR,
+    SO,
+    SI,
+    DLE,
+    DC1,
+    DC2,
+    DC3,
+    DC4,
+    NAK,
+    SYN,
+    ETB,
+    CAN,
+    EM,
+    SUB,
+    ESC,
+    FS,
+    GS,
+    RS,
+    US,
+    SP,
+    DEL = 0x7F,
+};
+
+enum IsoControlCode
+{
+    PAD = 0x80,
+    HOP,
+    BPH,
+    NBH,
+    IND,
+    NEL,
+    SSA,
+    ESA,
+    HTS,
+    HTJ,
+    VTS,
+    PLD,
+    PLU,
+    PI,
+    SS2,
+    SS3,
+    DCS,
+    PU1,
+    PU2,
+    STS,
+    CCH,
+    MW,
+    SPA,
+    EPA,
+    SOS,
+    SGC,
+    SGCI,
+    SCI,
+    CSI,
+    ST,
+    OSC,
+    PM,
+    APC
+};
+
 // ---------- TYPES ----------
 
 typedef enum Colors Colors;
@@ -99,6 +222,10 @@ typedef enum ColorOpt ColorOpt;
 typedef enum FontEffects FontEffects;
 typedef enum IdeogramEffects IdeogramEffects;
 typedef enum Font Font;
+typedef enum VtSequence VtSequence;
+typedef enum XtermSequence XtermSequence;
+typedef enum AsciiControlCode AsciiControlCode;
+typedef enum IsoControlCode IsoControlCode;
 
 // ---------- FUNCTIONS ----------
 
@@ -137,5 +264,12 @@ void term_cursor_enable_alternative_screen_buffer();
 void term_cursor_disable_alternative_screen_buffer();
 void term_cursor_bracketed_paste_mode_on();
 void term_cursor_bracketed_paste_mode_off();
+
+// sequences and ascii control characters
+void term_vt_secuence(VtSequence sequence);
+void term_xterm_sequence(XtermSequence secuence);
+void term_ascii_control_code(AsciiControlCode controlcode);
+void term_iso_control_code(IsoControlCode controlcode);
+
 
 #endif // !_TERM_STUFF_
