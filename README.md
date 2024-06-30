@@ -2,7 +2,7 @@
 
 ### About
 
-Just to make easy doing things for the terminal
+Just to make doing things for the terminal easy!
 
 ### Documentation
 

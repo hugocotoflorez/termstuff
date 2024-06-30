@@ -9,62 +9,62 @@ void term_cursor_up(uint16_t n)
 
 void term_cursor_down(uint16_t n)
 {
-    printf("\e[%dB",n);
+    printf("\e[%dB", n);
 }
 
 void term_cursor_forward(uint16_t n)
 {
-    printf("\e[%dC",n);
+    printf("\e[%dC", n);
 }
 
 void term_cursor_back(uint16_t n)
 {
-    printf("\e[%dD",n);
+    printf("\e[%dD", n);
 }
 
 void term_cursor_next_line(uint16_t n)
 {
-    printf("\e[%dE",n);
+    printf("\e[%dE", n);
 }
 
 void term_cursor_previous_line(uint16_t n)
 {
-    printf("\e[%dF",n);
+    printf("\e[%dF", n);
 }
 
 void term_cursor_horizontal_absolute(uint16_t n)
 {
-    printf("\e[%dG",n);
+    printf("\e[%dG", n);
 }
 
 void term_cursor_position(uint16_t n, uint16_t m)
 {
-    printf("\e[%d;%dH",n,m);
+    printf("\e[%d;%dH", n, m);
 }
 
 void term_cursor_erase_display(uint16_t n)
 {
-    printf("\e[%dJ",n);
+    printf("\e[%dJ", n);
 }
 
 void term_cursor_erase_line(uint16_t n)
 {
-    printf("\e[%dK",n);
+    printf("\e[%dK", n);
 }
 
 void term_cursor_scroll_up(uint16_t n)
 {
-    printf("\e[%dS",n);
+    printf("\e[%dS", n);
 }
 
 void term_cursor_scroll_down(uint16_t n)
 {
-    printf("\e[%dT",n);
+    printf("\e[%dT", n);
 }
 
 void term_cursor_horizontal_vertical_position(uint16_t n, uint16_t m)
 {
-    printf("\e[%d;%df",n,m);
+    printf("\e[%d;%df", n, m);
 }
 
 void term_cursor_aux_post_on()
@@ -130,4 +130,9 @@ void term_cursor_bracketed_paste_mode_on()
 void term_cursor_bracketed_paste_mode_off()
 {
     printf("\e[2004l");
+}
+
+void term_clear_screen()
+{
+    printf("\ec");
 }

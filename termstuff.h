@@ -265,6 +265,8 @@ void term_cursor_disable_alternative_screen_buffer();
 void term_cursor_bracketed_paste_mode_on();
 void term_cursor_bracketed_paste_mode_off();
 
+void term_clear_screen();
+
 // sequences and ascii control characters
 void term_vt_secuence(VtSequence sequence);
 void term_xterm_sequence(XtermSequence secuence);
