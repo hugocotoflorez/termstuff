@@ -134,5 +134,5 @@ void term_cursor_bracketed_paste_mode_off()
 
 void term_clear_screen()
 {
-    printf("\ec");
+    printf("\e[H\e[2J");
 }
