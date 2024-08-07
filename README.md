@@ -6,7 +6,7 @@ Just to make doing things for the terminal easy!
 
 ## Quick manual
 
-### Colors
+### Change Colors
 
 - `term_apply_color(Colors, ColorOpt)`: Change color.
 - `term_apply_8bit_color(color, ColorOpt)`: Change color (color is a 8bit integrer).
@@ -15,7 +15,7 @@ Just to make doing things for the terminal easy!
 - `term_apply_ideogram_effects(IdeogramEffects)`
 - `term_change_font(Font)`
 
-### Colors
+#### Colors
 - BLACK
 - RED
 - GREEN
@@ -96,7 +96,6 @@ The following options dont work in some terminals
 - `term_clear_screen()`
 
 > [!note]
-> In the header file you can view all the options for all the functions
-> You can chech [wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code)
-> for more info.
+> In the header file you can view all the options for all the functions.
+> You can chech [wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code) for more info.
 
