@@ -17,14 +17,38 @@
 
 enum Colors
 {
-    BLACK = 0,
-    RED,
-    GREEN,
-    YELLOW,
-    BLUE,
-    PURPLE,
-    CYAN,
-    WHITE,
+    BLACK  = 0,
+    RED    = 1,
+    GREEN  = 2,
+    YELLOW = 3,
+    BLUE   = 4,
+    PURPLE = 5,
+    CYAN   = 6,
+    WHITE  = 7,
+    GRAY1  = 232,
+    GRAY2  = 233,
+    GRAY3  = 234,
+    GRAY4  = 235,
+    GRAY5  = 236,
+    GRAY6  = 237,
+    GRAY7  = 238,
+    GRAY8  = 239,
+    GRAY9  = 240,
+    GRAY10 = 241,
+    GRAY11 = 242,
+    GRAY12 = 243,
+    GRAY13 = 244,
+    GRAY14 = 245,
+    GRAY15 = 246,
+    GRAY16 = 247,
+    GRAY17 = 248,
+    GRAY18 = 249,
+    GRAY19 = 250,
+    GRAY20 = 251,
+    GRAY21 = 252,
+    GRAY22 = 253,
+    GRAY23 = 254,
+    GRAY24 = 255,
 };
 
 enum ColorOpt
@@ -217,15 +241,15 @@ enum IsoControlCode
 
 // ---------- TYPES ----------
 
-typedef enum Colors Colors;
-typedef enum ColorOpt ColorOpt;
-typedef enum FontEffects FontEffects;
-typedef enum IdeogramEffects IdeogramEffects;
-typedef enum Font Font;
-typedef enum VtSequence VtSequence;
-typedef enum XtermSequence XtermSequence;
+typedef enum Colors           Colors;
+typedef enum ColorOpt         ColorOpt;
+typedef enum FontEffects      FontEffects;
+typedef enum IdeogramEffects  IdeogramEffects;
+typedef enum Font             Font;
+typedef enum VtSequence       VtSequence;
+typedef enum XtermSequence    XtermSequence;
 typedef enum AsciiControlCode AsciiControlCode;
-typedef enum IsoControlCode IsoControlCode;
+typedef enum IsoControlCode   IsoControlCode;
 
 // ---------- FUNCTIONS ----------
 
