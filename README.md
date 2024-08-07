@@ -24,7 +24,6 @@ Just to make doing things for the terminal easy!
 - PURPLE
 - CYAN
 - WHITE
-- GRAY1 - GRAY24 (gray scale)
 
 #### Color Options
 - NONE (useless)
